@@ -10,7 +10,7 @@ from nltk.stem.wordnet import WordNetLemmatizer
 from tqdm import tqdm
 
 # Importing the dataset
-dataset = pd.read_table('/Users/Aditya/Desktop/Reviews2.csv',delimiter = ';')
+dataset = pd.read_table('C:\Users\Aditya\Desktop\Reviews2.csv',delimiter = ';')
 print(dataset)
 # Dropping the dups in dataset
 dataset = dataset.drop_duplicates(subset={"UserId","ProfileName","Time","Text"}, keep='first', inplace=False)
